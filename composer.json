@@ -1,0 +1,40 @@
+{
+  "name": "medeirosdev/weather-here-developer",
+  "description": "Weather and Climate by Developer Here",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Flavio Medeiros",
+      "email": "smedeiros.flavio@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">7.1",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0",
+    "vlucas/phpdotenv": "^2.4",
+    "illuminate/support": ">5.4"
+  },
+  "suggest": {
+    "illuminate/support": "Allows you to use this package from within Laravel"
+  },
+  "autoload": {
+    "psr-4": {
+      "MedeirosDev\\WeatherHereDeveloper\\": "src/",
+      "MedeirosDev\\WeatherHereDeveloper\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MedeirosDev\\WeatherHereDeveloper\\Frameworks\\Laravel\\WeatherHereDeveloperServiceProvider"
+      ],
+      "aliases": {
+        "DistanceMatrix": "MedeirosDev\\WeatherHereDeveloper\\Frameworks\\Laravel\\WeatherHereDeveloper"
+      }
+    }
+  }
+}
