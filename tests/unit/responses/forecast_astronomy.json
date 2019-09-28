@@ -1,0 +1,118 @@
+{
+    "astronomy": {
+        "astronomy": [
+            {
+                "sunrise": "5:53AM",
+                "sunset": "6:05PM",
+                "moonrise": "5:10AM",
+                "moonset": "5:04PM",
+                "moonPhase": -0.049,
+                "moonPhaseDesc": "Quarto Minguante",
+                "iconName": "cw_waning_crescent",
+                "city": "Campinas",
+                "latitude": -22.89,
+                "longitude": -47.08,
+                "utcTime": "2019-09-27T00:00:00.000-03:00"
+            },
+            {
+                "sunrise": "5:52AM",
+                "sunset": "6:06PM",
+                "moonrise": "5:55AM",
+                "moonset": "6:09PM",
+                "moonPhase": -0.011,
+                "moonPhaseDesc": "Lua Nova",
+                "iconName": "cw_new_moon",
+                "city": "Campinas",
+                "latitude": -22.89,
+                "longitude": -47.08,
+                "utcTime": "2019-09-28T00:00:00.000-03:00"
+            },
+            {
+                "sunrise": "5:51AM",
+                "sunset": "6:06PM",
+                "moonrise": "6:38AM",
+                "moonset": "7:13PM",
+                "moonPhase": 0.003,
+                "moonPhaseDesc": "Lua Nova",
+                "iconName": "cw_new_moon",
+                "city": "Campinas",
+                "latitude": -22.89,
+                "longitude": -47.08,
+                "utcTime": "2019-09-29T00:00:00.000-03:00"
+            },
+            {
+                "sunrise": "5:50AM",
+                "sunset": "6:06PM",
+                "moonrise": "7:21AM",
+                "moonset": "8:16PM",
+                "moonPhase": 0.025,
+                "moonPhaseDesc": "Quarto Crescente",
+                "iconName": "cw_waxing_crescent",
+                "city": "Campinas",
+                "latitude": -22.89,
+                "longitude": -47.08,
+                "utcTime": "2019-09-30T00:00:00.000-03:00"
+            },
+            {
+                "sunrise": "5:49AM",
+                "sunset": "6:07PM",
+                "moonrise": "8:05AM",
+                "moonset": "9:20PM",
+                "moonPhase": 0.074,
+                "moonPhaseDesc": "Quarto Crescente",
+                "iconName": "cw_waxing_crescent",
+                "city": "Campinas",
+                "latitude": -22.89,
+                "longitude": -47.08,
+                "utcTime": "2019-10-01T00:00:00.000-03:00"
+            },
+            {
+                "sunrise": "5:48AM",
+                "sunset": "6:07PM",
+                "moonrise": "8:50AM",
+                "moonset": "10:21PM",
+                "moonPhase": 0.145,
+                "moonPhaseDesc": "Quarto Crescente",
+                "iconName": "cw_waxing_crescent",
+                "city": "Campinas",
+                "latitude": -22.89,
+                "longitude": -47.08,
+                "utcTime": "2019-10-02T00:00:00.000-03:00"
+            },
+            {
+                "sunrise": "5:47AM",
+                "sunset": "6:07PM",
+                "moonrise": "9:38AM",
+                "moonset": "11:20PM",
+                "moonPhase": 0.232,
+                "moonPhaseDesc": "Quarto Crescente",
+                "iconName": "cw_waxing_crescent",
+                "city": "Campinas",
+                "latitude": -22.89,
+                "longitude": -47.08,
+                "utcTime": "2019-10-03T00:00:00.000-03:00"
+            },
+            {
+                "sunrise": "5:46AM",
+                "sunset": "6:08PM",
+                "moonrise": "10:28AM",
+                "moonset": "*",
+                "moonPhase": 0.328,
+                "moonPhaseDesc": "Quarto Crescente",
+                "iconName": "cw_waxing_crescent",
+                "city": "Campinas",
+                "latitude": -22.89,
+                "longitude": -47.08,
+                "utcTime": "2019-10-04T00:00:00.000-03:00"
+            }
+        ],
+        "country": "Brasil",
+        "state": "São Paulo",
+        "city": "Campinas",
+        "latitude": -22.89703,
+        "longitude": -47.04441,
+        "timezone": -3
+    },
+    "feedCreation": "2019-09-27T19:21:08.366Z",
+    "metric": true
+}
