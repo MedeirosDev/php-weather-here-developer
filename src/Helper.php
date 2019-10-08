@@ -56,4 +56,36 @@ class Helper
 
         return false;
     }
+
+    public static function isLatitudeAndLongitude(string $string): bool
+    {
+        $latitudeLongitude = self::getLatitudeAndLongitude($string);
+        $latitude = $latitudeLongitude[0];
+        $longitude = $latitudeLongitude[1] ?? null;
+
+        return self::validateLatitude($latitude) && self::validateLongitude($longitude);
+    }
+
+    public static function getLatitudeAndLongitude(string $latitudeAndLongitude): array
+    {
+        $delimiter = preg_match('/[\;\,\s]/', $latitudeAndLongitude, $delimiters) ? $delimiters[0] : ';';
+        $latitudeLongitude = explode($delimiter, $latitudeAndLongitude);
+
+        $latitudeLongitude[1] = $latitudeLongitude[1] ?? '';
+
+        return $latitudeLongitude;
+    }
+
+    public static function validateLatitude(string $latitude): bool {
+        return (bool) preg_match('/^(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,6})?))$/', trim($latitude));
+    }
+
+    public static function validateLongitude(string $longitude): bool {
+        return (bool) preg_match('/^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$/', trim($longitude));
+    }
+
+    public static function isZipcode(string $zipcode): bool
+    {
+        return strlen($zipcode) <= 20 && strlen(preg_replace('/[^0-9]/', '', $zipcode)) >= 6;
+    }
 }

@@ -3,6 +3,8 @@
 
 namespace MedeirosDev\WeatherHereDeveloper\Entities;
 
+use MedeirosDev\WeatherHereDeveloper\Helper;
+
 /**
  * Class Location
  * @package MedeirosDev\WeatherHereDeveloper\Entities
@@ -20,6 +22,12 @@ class Location
     protected $name;
     protected $zipcode;
 
+    public function __construct(?string $latitudeAndLongitudeOrZipcodeOrName = null)
+    {
+        if ($latitudeAndLongitudeOrZipcodeOrName) {
+            $this->byWhatever($latitudeAndLongitudeOrZipcodeOrName);
+        }
+    }
 
     public static function byLatitudeLongitude(string $latitude, string $longitude): self {
         return (new static())->setLatitudeLongitude($latitude, $longitude);
@@ -31,6 +39,20 @@ class Location
 
     public static function byZipcode(string $zipcode): self {
         return (new static())->setZipcode($zipcode);
+    }
+
+    protected function byWhatever(string $latitudeAndLongitudeOrZipcodeOrName): self
+    {
+        if(Helper::isLatitudeAndLongitude($latitudeAndLongitudeOrZipcodeOrName)) {
+            $latitudeAndLongitude = Helper::getLatitudeAndLongitude($latitudeAndLongitudeOrZipcodeOrName);
+            $this->setLatitudeLongitude($latitudeAndLongitude[0], $latitudeAndLongitude[1]);
+
+        } elseif(Helper::isZipcode($latitudeAndLongitudeOrZipcodeOrName)) {
+            $this->setZipcode($latitudeAndLongitudeOrZipcodeOrName);
+
+        } else {
+            $this->setName($latitudeAndLongitudeOrZipcodeOrName);
+        }
     }
 
     protected function clear(): self
@@ -94,4 +116,6 @@ class Location
     {
         return $this->by;
     }
+
+
 }
