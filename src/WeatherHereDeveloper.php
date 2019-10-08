@@ -24,7 +24,7 @@ class WeatherHereDeveloper
     protected $metric = Unit::METRIC;
     protected $license;
 
-    public function __construct(License $license = null)
+    public function __construct(?License $license = null)
     {
         $this->autoLicense($license);
     }
@@ -38,9 +38,9 @@ class WeatherHereDeveloper
         return new static($license);
     }
 
-    private function autoLicense(License $license): self {
+    private function autoLicense(?License $license): self {
 
-        if ($license) {
+        if ($license instanceof License) {
             $this->license = $license;
 
         } elseif (Helper::getFramework() === 'Laravel') {
