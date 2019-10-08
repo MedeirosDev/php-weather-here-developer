@@ -53,6 +53,7 @@ class Location
         } else {
             $this->setName($latitudeAndLongitudeOrZipcodeOrName);
         }
+        return $this;
     }
 
     protected function clear(): self
