@@ -13,7 +13,7 @@ Documentation -
 Install the package using composer:
 
 ```
-$ composer require MedeirosDev/php-weather-here-developer
+$ composer require medeirosdev/weather-here-developer
 ```
 
 ## Frameworks
