@@ -44,10 +44,10 @@ class Helper
 
     public static function getFramework(): string
     {
-        if (class_exists('Illuminate\Support\Facades\Artisan')) {
+        if (class_exists('\Illuminate\Support\Facades\Artisan')) {
 
-            Illuminate\Support\Facades\Artisan::call('help',['--version']);
-            $output = Illuminate\Support\Facades\Artisan::output();
+            \Illuminate\Support\Facades\Artisan::call('help',['--version']);
+            $output = \Illuminate\Support\Facades\Artisan::output();
 
             if (strpos($output, 'Laravel') >= 0) {
                 return 'Laravel';
