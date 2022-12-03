@@ -2,8 +2,8 @@
 
 This is a simple package that allows access to the Here Developer Weather API using a (mostly) fluent API.
 
-![Packagist Downloads](https://img.shields.io/packagist/dt/medeiroz/weather-here-developer)
-![Packagist PHP Version](https://img.shields.io/packagist/dependency-v/medeiroz/weather-here-developer/php)
+![Packagist Downloads](https://img.shields.io/packagist/dt/medeirosdev/weather-here-developer)
+![Packagist PHP Version](https://img.shields.io/packagist/dependency-v/medeirosdev/weather-here-developer/php)
 
 ## Information
 Package create for Here Developer Weather
@@ -16,7 +16,7 @@ Documentation -
 Install the package using composer:
 
 ```
-$ composer require medeiroz/weather-here-developer
+$ composer require medeirosdev/weather-here-developer
 ```
 
 ## Frameworks
