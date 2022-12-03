@@ -2,6 +2,8 @@
 
 This is a simple package that allows access to the Here Developer Weather API using a (mostly) fluent API.
 
+![Packagist Downloads](https://img.shields.io/packagist/dt/medeirosdev/php-google-maps-distance-matrix)
+
 ## Information
 Package create for Here Developer Weather
 
